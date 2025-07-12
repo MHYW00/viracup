@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" style="background: transparent;">
+  <defs>
+    <linearGradient id="cupBody7oz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="50%" style="stop-color:#fafafa"/>
+      <stop offset="100%" style="stop-color:#f5f5f5"/>
+    </linearGradient>
+    <linearGradient id="cupRim7oz" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#e5e5e5"/>
+    </linearGradient>
+    <filter id="shadow7oz">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+  
+  <!-- Bardak gölgesi -->
+  <ellipse cx="100" cy="240" rx="40" ry="8" fill="#00000010"/>
+  
+  <!-- Bardak ana gövdesi -->
+  <path d="M50 50 L150 50 L135 220 L65 220 Z" 
+        fill="url(#cupBody7oz)" 
+        stroke="#CBB994" 
+        stroke-width="1.5"
+        filter="url(#shadow7oz)"/>
+  
+  <!-- Bardak üst kenar (rim) -->
+  <ellipse cx="100" cy="50" rx="50" ry="8" 
+           fill="url(#cupRim7oz)" 
+           stroke="#CBB994" 
+           stroke-width="1"/>
+  
+  <!-- Bardak alt -->
+  <ellipse cx="100" cy="220" rx="35" ry="5" 
+           fill="#e5e5e5" 
+           stroke="#CBB994" 
+           stroke-width="0.5"/>
+  
+  <!-- Logo alanı -->
+  <rect x="75" y="120" width="50" height="30" 
+        fill="#F5F5F5" 
+        rx="8" 
+        stroke="#CBB994" 
+        stroke-width="0.5"/>
+  
+  <!-- VIRACUP logo -->
+  <text x="100" y="138" 
+        text-anchor="middle" 
+        font-size="10" 
+        fill="#166534" 
+        font-weight="bold" 
+        font-family="Arial, sans-serif">VIRACUP</text>
+  
+  <!-- Kapasite -->
+  <text x="100" y="165" 
+        text-anchor="middle" 
+        font-size="12" 
+        fill="#78716c" 
+        font-weight="bold" 
+        font-family="Arial, sans-serif">7 OZ</text>
+  
+  <!-- Popüler yıldız badge -->
+  <circle cx="135" cy="85" r="12" fill="#166534"/>
+  <text x="135" y="91" 
+        text-anchor="middle" 
+        font-size="12" 
+        fill="white" 
+        font-weight="bold">★</text>
+  
+  <!-- Eco simge -->
+  <circle cx="65" cy="85" r="8" fill="#166534" opacity="0.9"/>
+  <text x="65" y="90" 
+        text-anchor="middle" 
+        font-size="8" 
+        fill="white" 
+        font-weight="bold">♻</text>
+  
+  <!-- Bardak üzerinde hafif highlight -->
+  <path d="M55 60 L65 60 L60 200 L55 200 Z" 
+        fill="url(#cupRim7oz)" 
+        opacity="0.3"/>
+</svg> 
