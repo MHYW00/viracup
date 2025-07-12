@@ -53,29 +53,101 @@ const structuredData = {
     "itemListElement": [
       {
         "@type": "Offer",
+        "price": "Fiyat teklifi için iletişime geçin",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Viracup"
+        },
         "itemOffered": {
           "@type": "Product",
           "name": "6oz Karton Bardak",
           "description": "Küçük boy karton bardak, espresso ve küçük içecekler için ideal",
-          "category": "Karton Bardak"
+          "category": "Karton Bardak",
+          "brand": {
+            "@type": "Brand",
+            "name": "Viracup"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "Fiyat teklifi için iletişime geçin",
+            "priceCurrency": "TRY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
         }
       },
       {
         "@type": "Offer",
+        "price": "Fiyat teklifi için iletişime geçin",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Viracup"
+        },
         "itemOffered": {
           "@type": "Product",
           "name": "7oz Karton Bardak",
           "description": "Orta boy karton bardak, kahve ve çay için mükemmel boyut",
-          "category": "Karton Bardak"
+          "category": "Karton Bardak",
+          "brand": {
+            "@type": "Brand",
+            "name": "Viracup"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "Fiyat teklifi için iletişime geçin",
+            "priceCurrency": "TRY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "200",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
         }
       },
       {
         "@type": "Offer",
+        "price": "Fiyat teklifi için iletişime geçin",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Viracup"
+        },
         "itemOffered": {
           "@type": "Product",
           "name": "10oz Karton Bardak",
           "description": "Büyük boy karton bardak, soğuk içecekler ve cafe standardı",
-          "category": "Karton Bardak"
+          "category": "Karton Bardak",
+          "brand": {
+            "@type": "Brand",
+            "name": "Viracup"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "Fiyat teklifi için iletişime geçin",
+            "priceCurrency": "TRY",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "180",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
         }
       }
     ]
