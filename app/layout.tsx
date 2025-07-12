@@ -5,7 +5,6 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Karton Bardak Üreticisi | Viracup - Türkiye\'nin En Kaliteli Karton Bardak Markası',
   description: 'Karton bardak üretimi ve satışında Türkiye\'nin lider markası Viracup. 6oz, 7oz, 10oz karton bardak çeşitleri, özel baskı, toplu sipariş ve hızlı teslimat. Çevre dostu karton bardak çözümleri.',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes',
   keywords: 'karton bardak, karton bardak üreticisi, karton bardak satışı, karton bardak fiyatları, 6oz karton bardak, 7oz karton bardak, 10oz karton bardak, özel baskılı karton bardak, toplu karton bardak siparişi, çevre dostu karton bardak, sızdırmaz karton bardak, cafe karton bardak, restaurant karton bardak, karton bardak Türkiye, karton bardak istanbul, karton bardak ankara, karton bardak trabzon',
   authors: [{ name: 'Viracup Karton Bardak' }],
   creator: 'Viracup Karton Bardak Üreticisi',
@@ -54,6 +53,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://viracup.com',
   },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
