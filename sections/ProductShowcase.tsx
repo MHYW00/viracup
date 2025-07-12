@@ -3,44 +3,295 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Star, Info } from 'lucide-react';
-import Image from 'next/image';
 
-// Performans için SVG'leri external dosyalar olarak kullanıyoruz
-const Cup6oz = () => (
-  <Image 
-    src="/cup-6oz.svg" 
-    alt="6oz Karton Bardak" 
-    width={140} 
-    height={140}
-    className="w-full h-full"
-    loading="lazy"
-    priority={false}
-  />
-);
+// SVG bileşenleri - Gerçek karton bardak referansı
+const Cup6oz = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" style={{background: 'transparent'}} className="w-full h-full">
+      <defs>
+        <linearGradient id="cupBody6oz" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="30%" style={{stopColor:'#fefefe'}}/>
+          <stop offset="70%" style={{stopColor:'#f8f8f8'}}/>
+          <stop offset="100%" style={{stopColor:'#f0f0f0'}}/>
+        </linearGradient>
+        <linearGradient id="cupRim6oz" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="100%" style={{stopColor:'#e8e8e8'}}/>
+        </linearGradient>
+        <filter id="shadow6oz">
+          <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#00000020"/>
+        </filter>
+      </defs>
+      
+      {/* Gölge */}
+      <ellipse cx="70" cy="125" rx="20" ry="4" fill="#00000010"/>
+      
+      {/* Ana konik bardak gövdesi - 6oz küçük */}
+      <path d="M35 15 L105 15 L95 115 L45 115 Z" 
+            fill="url(#cupBody6oz)" 
+            stroke="#d4d4d4" 
+            strokeWidth="1"
+            filter="url(#shadow6oz)"/>
+      
+      {/* Karton bardak kıvrımları */}
+      <path d="M37 25 L103 25" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M39 35 L101 35" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M41 45 L99 45" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M43 55 L97 55" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M45 65 L95 65" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M47 75 L93 75" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M49 85 L91 85" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M51 95 L89 95" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M53 105 L87 105" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      
+      {/* Kalın üst kenar (rim) */}
+      <ellipse cx="70" cy="15" rx="35" ry="3" 
+               fill="url(#cupRim6oz)" 
+               stroke="#CBB994" 
+               strokeWidth="1"/>
+      <ellipse cx="70" cy="13" rx="35" ry="2" 
+               fill="#ffffff" 
+               opacity="0.8"/>
+      
+      {/* Alt kenar */}
+      <ellipse cx="70" cy="115" rx="25" ry="2" 
+               fill="#e8e8e8" 
+               stroke="#d4d4d4" 
+               strokeWidth="0.5"/>
+      
+      {/* Logo alanı - gerçekçi */}
+      <ellipse cx="70" cy="65" rx="18" ry="12" 
+               fill="#F5F5F5" 
+               stroke="#CBB994" 
+               strokeWidth="0.5"
+               opacity="0.9"/>
+      
+      {/* VIRACUP logo */}
+      <text x="70" y="68" 
+            textAnchor="middle" 
+            fontSize="7" 
+            fill="#166534" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">VIRACUP</text>
+      
+      {/* Kapasite */}
+      <text x="70" y="78" 
+            textAnchor="middle" 
+            fontSize="9" 
+            fill="#78716c" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">6 OZ</text>
+      
+      {/* Sol taraf highlight */}
+      <path d="M37 20 L39 20 L39 110 L37 110 Z" 
+            fill="url(#cupRim6oz)" 
+            opacity="0.3"/>
+      
+      {/* Sağ taraf gölge */}
+      <path d="M101 20 L103 20 L93 110 L95 110 Z" 
+            fill="#e0e0e0" 
+            opacity="0.4"/>
+    </svg>
+  );
+};
 
-const Cup7oz = () => (
-  <Image 
-    src="/cup-7oz.svg" 
-    alt="7oz Karton Bardak" 
-    width={160} 
-    height={155}
-    className="w-full h-full"
-    loading="lazy"
-    priority={false}
-  />
-);
+const Cup7oz = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 155" style={{background: 'transparent'}} className="w-full h-full">
+      <defs>
+        <linearGradient id="cupBody7oz" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="30%" style={{stopColor:'#fefefe'}}/>
+          <stop offset="70%" style={{stopColor:'#f8f8f8'}}/>
+          <stop offset="100%" style={{stopColor:'#f0f0f0'}}/>
+        </linearGradient>
+        <linearGradient id="cupRim7oz" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="100%" style={{stopColor:'#e8e8e8'}}/>
+        </linearGradient>
+        <filter id="shadow7oz">
+          <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#00000020"/>
+        </filter>
+      </defs>
+      
+      {/* Gölge */}
+      <ellipse cx="80" cy="140" rx="26" ry="5" fill="#00000010"/>
+      
+      {/* Ana konik bardak gövdesi - 7oz orta */}
+      <path d="M35 15 L125 15 L115 130 L45 130 Z" 
+            fill="url(#cupBody7oz)" 
+            stroke="#d4d4d4" 
+            strokeWidth="1"
+            filter="url(#shadow7oz)"/>
+      
+      {/* Karton bardak kıvrımları */}
+      <path d="M37 28 L123 28" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M39 41 L121 41" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M41 54 L119 54" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M43 67 L117 67" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M45 80 L115 80" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M47 93 L113 93" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M49 106 L111 106" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M51 119 L109 119" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      
+      {/* Kalın üst kenar (rim) */}
+      <ellipse cx="80" cy="15" rx="45" ry="4" 
+               fill="url(#cupRim7oz)" 
+               stroke="#CBB994" 
+               strokeWidth="1"/>
+      <ellipse cx="80" cy="13" rx="45" ry="3" 
+               fill="#ffffff" 
+               opacity="0.8"/>
+      
+      {/* Alt kenar */}
+      <ellipse cx="80" cy="130" rx="35" ry="3" 
+               fill="#e8e8e8" 
+               stroke="#d4d4d4" 
+               strokeWidth="0.5"/>
+      
+      {/* Logo alanı - gerçekçi */}
+      <ellipse cx="80" cy="75" rx="22" ry="14" 
+               fill="#F5F5F5" 
+               stroke="#CBB994" 
+               strokeWidth="0.5"
+               opacity="0.9"/>
+      
+      {/* VIRACUP logo */}
+      <text x="80" y="78" 
+            textAnchor="middle" 
+            fontSize="8" 
+            fill="#166534" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">VIRACUP</text>
+      
+      {/* Kapasite */}
+      <text x="80" y="90" 
+            textAnchor="middle" 
+            fontSize="10" 
+            fill="#78716c" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">7 OZ</text>
+      
+      {/* Sol taraf highlight */}
+      <path d="M37 20 L39 20 L39 125 L37 125 Z" 
+            fill="url(#cupRim7oz)" 
+            opacity="0.3"/>
+      
+      {/* Sağ taraf gölge */}
+      <path d="M121 20 L123 20 L113 125 L115 125 Z" 
+            fill="#e0e0e0" 
+            opacity="0.4"/>
+    </svg>
+  );
+};
 
-const Cup10oz = () => (
-  <Image 
-    src="/cup-10oz.svg" 
-    alt="10oz Karton Bardak" 
-    width={190} 
-    height={180}
-    className="w-full h-full"
-    loading="lazy"
-    priority={false}
-  />
-);
+const Cup10oz = () => {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 180" style={{background: 'transparent'}} className="w-full h-full">
+      <defs>
+        <linearGradient id="cupBody10oz" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="30%" style={{stopColor:'#fefefe'}}/>
+          <stop offset="70%" style={{stopColor:'#f8f8f8'}}/>
+          <stop offset="100%" style={{stopColor:'#f0f0f0'}}/>
+        </linearGradient>
+        <linearGradient id="cupRim10oz" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#ffffff'}}/>
+          <stop offset="100%" style={{stopColor:'#e8e8e8'}}/>
+        </linearGradient>
+        <linearGradient id="cupLid10oz" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style={{stopColor:'#CBB994'}}/>
+          <stop offset="100%" style={{stopColor:'#A0936B'}}/>
+        </linearGradient>
+        <filter id="shadow10oz">
+          <feDropShadow dx="2" dy="4" stdDeviation="3" floodColor="#00000020"/>
+        </filter>
+      </defs>
+      
+      {/* Gölge */}
+      <ellipse cx="95" cy="165" rx="32" ry="6" fill="#00000010"/>
+      
+      {/* Kapak - gerçekçi */}
+      <ellipse cx="95" cy="8" rx="48" ry="6" 
+               fill="url(#cupLid10oz)" 
+               stroke="#78716c" 
+               strokeWidth="1"/>
+      <ellipse cx="95" cy="6" rx="48" ry="4" 
+               fill="#CBB994" 
+               opacity="0.8"/>
+      {/* Kapak merkez çukuru */}
+      <ellipse cx="95" cy="7" rx="8" ry="2" 
+               fill="#78716c" 
+               opacity="0.6"/>
+      
+      {/* Ana konik bardak gövdesi - 10oz en geniş */}
+      <path d="M40 22 L150 22 L135 155 L55 155 Z" 
+            fill="url(#cupBody10oz)" 
+            stroke="#d4d4d4" 
+            strokeWidth="1"
+            filter="url(#shadow10oz)"/>
+      
+      {/* Karton bardak kıvrımları */}
+      <path d="M42 40 L148 40" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M44 55 L146 55" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M46 70 L144 70" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M48 85 L142 85" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M50 100 L140 100" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M52 115 L138 115" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M54 130 L136 130" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      <path d="M56 145 L134 145" stroke="#e8e8e8" strokeWidth="0.5" opacity="0.7"/>
+      
+      {/* Kalın üst kenar (rim) */}
+      <ellipse cx="95" cy="22" rx="55" ry="5" 
+               fill="url(#cupRim10oz)" 
+               stroke="#CBB994" 
+               strokeWidth="1"/>
+      <ellipse cx="95" cy="20" rx="55" ry="4" 
+               fill="#ffffff" 
+               opacity="0.8"/>
+      
+      {/* Alt kenar */}
+      <ellipse cx="95" cy="155" rx="40" ry="4" 
+               fill="#e8e8e8" 
+               stroke="#d4d4d4" 
+               strokeWidth="0.5"/>
+      
+      {/* Logo alanı - gerçekçi */}
+      <ellipse cx="95" cy="95" rx="28" ry="18" 
+               fill="#F5F5F5" 
+               stroke="#CBB994" 
+               strokeWidth="0.5"
+               opacity="0.9"/>
+      
+      {/* VIRACUP logo */}
+      <text x="95" y="98" 
+            textAnchor="middle" 
+            fontSize="9" 
+            fill="#166534" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">VIRACUP</text>
+      
+      {/* Kapasite */}
+      <text x="95" y="112" 
+            textAnchor="middle" 
+            fontSize="11" 
+            fill="#78716c" 
+            fontWeight="bold" 
+            fontFamily="Arial, sans-serif">10 OZ</text>
+      
+      {/* Sol taraf highlight */}
+      <path d="M42 27 L44 27 L44 150 L42 150 Z" 
+            fill="url(#cupRim10oz)" 
+            opacity="0.3"/>
+      
+      {/* Sağ taraf gölge */}
+      <path d="M146 27 L148 27 L133 150 L135 150 Z" 
+            fill="#e0e0e0" 
+            opacity="0.4"/>
+    </svg>
+  );
+};
 
 const products = [
   {
@@ -106,25 +357,25 @@ export default function ProductShowcase() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-600 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Floating Particles - Reduced for performance */}
+      {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(4)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-green-800/15 rounded-full"
+            className="absolute w-2 h-2 bg-green-800/20 rounded-full"
             animate={{
-              y: [0, -80, 0],
-              opacity: [0, 0.7, 0],
+              y: [0, -100, 0],
+              x: [0, 50, 0],
+              opacity: [0, 1, 0],
             }}
             transition={{
-              duration: 6 + i,
+              duration: 4 + i,
               repeat: Infinity,
-              delay: i * 1.5,
-              ease: "linear"
+              delay: i * 0.8,
             }}
             style={{
-              left: `${15 + i * 20}%`,
-              top: `${30 + i * 10}%`,
+              left: `${10 + i * 12}%`,
+              top: `${20 + i * 8}%`,
             }}
           />
         ))}
@@ -179,10 +430,11 @@ export default function ProductShowcase() {
                 <div className="aspect-[4/5] flex items-center justify-center">
                   <motion.div
                     animate={{ 
-                      y: [0, -6, 0]
+                      y: [0, -8, 0],
+                      rotateY: [0, 5, 0]
                     }}
                     transition={{ 
-                      duration: 5,
+                      duration: 4,
                       repeat: Infinity,
                       ease: "easeInOut"
                     }}
@@ -193,9 +445,13 @@ export default function ProductShowcase() {
                 </div>
                 
                 {/* Badge */}
-                <div className="absolute top-4 right-4 bg-green-800 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                <motion.div
+                  animate={{ y: [0, -5, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="absolute top-4 right-4 bg-green-800 text-white px-3 py-1 rounded-full text-xs font-semibold"
+                >
                   {product.badge}
-                </div>
+                </motion.div>
               </div>
 
               {/* Product Info */}

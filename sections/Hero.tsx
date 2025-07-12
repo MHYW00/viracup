@@ -26,23 +26,23 @@ export default function Hero() {
 
       {/* Floating Particles - Optimized */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(4)].map((_, i) => (
+        {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-green-800/15 rounded-full"
+            className="absolute w-2 h-2 bg-green-800/20 rounded-full will-change-transform"
             animate={{
               y: [0, -80, 0],
-              opacity: [0, 0.7, 0],
+              opacity: [0, 1, 0],
             }}
             transition={{
-              duration: 6 + i,
+              duration: 3 + i * 0.5,
               repeat: Infinity,
-              delay: i * 1.5,
-              ease: "linear"
+              delay: i * 0.6,
+              ease: "easeInOut",
             }}
             style={{
-              left: `${15 + i * 20}%`,
-              top: `${30 + i * 10}%`,
+              left: `${10 + i * 15}%`,
+              top: `${20 + i * 10}%`,
             }}
           />
         ))}

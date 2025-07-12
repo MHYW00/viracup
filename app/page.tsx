@@ -1,10 +1,16 @@
+import dynamic from 'next/dynamic'
 import Hero from '@/sections/Hero'
 import ProductShowcase from '@/sections/ProductShowcase'
 import WhyViracup from '@/sections/WhyViracup'
 import About from '@/sections/About'
 import ContactForm from '@/sections/ContactForm'
 import Footer from '@/sections/Footer'
-import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+
+// Lazy load FloatingWhatsApp for better initial page load
+const FloatingWhatsApp = dynamic(() => import('@/components/FloatingWhatsApp'), {
+  ssr: false,
+  loading: () => null
+})
 
 const structuredData = {
   "@context": "https://schema.org",

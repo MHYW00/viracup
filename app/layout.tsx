@@ -5,6 +5,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Karton Bardak Üreticisi | Viracup - Türkiye\'nin En Kaliteli Karton Bardak Markası',
   description: 'Karton bardak üretimi ve satışında Türkiye\'nin lider markası Viracup. 6oz, 7oz, 10oz karton bardak çeşitleri, özel baskı, toplu sipariş ve hızlı teslimat. Çevre dostu karton bardak çözümleri.',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes',
   keywords: 'karton bardak, karton bardak üreticisi, karton bardak satışı, karton bardak fiyatları, 6oz karton bardak, 7oz karton bardak, 10oz karton bardak, özel baskılı karton bardak, toplu karton bardak siparişi, çevre dostu karton bardak, sızdırmaz karton bardak, cafe karton bardak, restaurant karton bardak, karton bardak Türkiye, karton bardak istanbul, karton bardak ankara, karton bardak trabzon',
   authors: [{ name: 'Viracup Karton Bardak' }],
   creator: 'Viracup Karton Bardak Üreticisi',
@@ -66,6 +67,18 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        
+        {/* Font preloading for better performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" 
+          rel="stylesheet"
+        />
+        
+        {/* DNS prefetch for external resources */}
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className="antialiased">
         {children}
