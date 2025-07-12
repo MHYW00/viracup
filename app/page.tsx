@@ -90,6 +90,10 @@ const structuredData = {
                 "value": "0",
                 "currency": "TRY"
               },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "TR"
+              },
               "deliveryTime": {
                 "@type": "ShippingDeliveryTime",
                 "handlingTime": {
@@ -110,7 +114,9 @@ const structuredData = {
               "@type": "MerchantReturnPolicy",
               "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
               "merchantReturnDays": 14,
-              "returnMethod": "https://schema.org/ReturnByMail"
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn",
+              "applicableCountry": "TR"
             }
           },
           "aggregateRating": {
@@ -161,6 +167,10 @@ const structuredData = {
                 "value": "0",
                 "currency": "TRY"
               },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "TR"
+              },
               "deliveryTime": {
                 "@type": "ShippingDeliveryTime",
                 "handlingTime": {
@@ -181,7 +191,9 @@ const structuredData = {
               "@type": "MerchantReturnPolicy",
               "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
               "merchantReturnDays": 14,
-              "returnMethod": "https://schema.org/ReturnByMail"
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn",
+              "applicableCountry": "TR"
             }
           },
           "aggregateRating": {
@@ -232,6 +244,10 @@ const structuredData = {
                 "value": "0",
                 "currency": "TRY"
               },
+              "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "TR"
+              },
               "deliveryTime": {
                 "@type": "ShippingDeliveryTime",
                 "handlingTime": {
@@ -252,7 +268,9 @@ const structuredData = {
               "@type": "MerchantReturnPolicy",
               "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
               "merchantReturnDays": 14,
-              "returnMethod": "https://schema.org/ReturnByMail"
+              "returnMethod": "https://schema.org/ReturnByMail",
+              "returnFees": "https://schema.org/FreeReturn",
+              "applicableCountry": "TR"
             }
           },
           "aggregateRating": {
