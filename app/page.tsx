@@ -1,10 +1,25 @@
+import dynamic from 'next/dynamic'
 import Hero from '@/sections/Hero'
-import ProductShowcase from '@/sections/ProductShowcase'
-import WhyViracup from '@/sections/WhyViracup'
-import About from '@/sections/About'
-import ContactForm from '@/sections/ContactForm'
-import Footer from '@/sections/Footer'
-import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+
+// Lazy load components to improve performance
+const ProductShowcase = dynamic(() => import('@/sections/ProductShowcase'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
+})
+const WhyViracup = dynamic(() => import('@/sections/WhyViracup'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
+})
+const About = dynamic(() => import('@/sections/About'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
+})
+const ContactForm = dynamic(() => import('@/sections/ContactForm'), {
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
+})
+const Footer = dynamic(() => import('@/sections/Footer'), {
+  loading: () => <div className="h-64 animate-pulse bg-gray-100"></div>
+})
+const FloatingWhatsApp = dynamic(() => import('@/components/FloatingWhatsApp'), {
+  ssr: false
+})
 
 const structuredData = {
   "@context": "https://schema.org",
