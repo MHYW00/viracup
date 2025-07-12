@@ -224,7 +224,7 @@ export default function UserAgreement() {
               <div className="prose prose-green max-w-none space-y-6 text-stone-700">
                 <div>
                   <h3 className="text-xl font-semibold text-green-800 mb-3">1. Veri Sorumlusu</h3>
-                  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verilerinizin veri sorumlusu Viracup'tır.</p>
+                  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, kişisel verilerinizin veri sorumlusu Viracup&apos;tır.</p>
                 </div>
 
                 <div>
