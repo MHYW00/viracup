@@ -1,6 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // appDir is no longer needed in Next.js 14
+  // Performance optimizations
+  experimental: {
+    optimizePackageImports: ['framer-motion', 'lucide-react']
+  },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 60,
+  },
+  // Compress responses
+  compress: true,
+  // Enable static optimization
+  trailingSlash: false,
+  // Reduce bundle size
+  swcMinify: true,
 }
 
 module.exports = nextConfig 
