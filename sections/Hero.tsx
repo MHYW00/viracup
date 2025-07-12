@@ -24,25 +24,25 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-600 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Floating Particles - Optimized */}
+      {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(6)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 bg-green-800/20 rounded-full will-change-transform"
+            className="absolute w-2 h-2 bg-green-800/20 rounded-full"
             animate={{
-              y: [0, -80, 0],
+              y: [0, -100, 0],
+              x: [0, 50, 0],
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: 3 + i * 0.5,
+              duration: 4 + i,
               repeat: Infinity,
-              delay: i * 0.6,
-              ease: "easeInOut",
+              delay: i * 0.8,
             }}
             style={{
-              left: `${10 + i * 15}%`,
-              top: `${20 + i * 10}%`,
+              left: `${10 + i * 12}%`,
+              top: `${20 + i * 8}%`,
             }}
           />
         ))}
