@@ -53,7 +53,7 @@ const structuredData = {
     "itemListElement": [
       {
         "@type": "Offer",
-        "price": "Fiyat teklifi için iletişime geçin",
+        "price": "0.50",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -69,11 +69,47 @@ const structuredData = {
             "@type": "Brand",
             "name": "Viracup"
           },
+          "image": "https://viracuponline.com/cup-6oz.svg",
           "offers": {
             "@type": "Offer",
-            "price": "Fiyat teklifi için iletişime geçin",
+            "price": "0.50",
             "priceCurrency": "TRY",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "0.50",
+              "priceCurrency": "TRY",
+              "valueAddedTaxIncluded": true
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "TRY"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 5,
+                  "unitCode": "DAY"
+                }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 14,
+              "returnMethod": "https://schema.org/ReturnByMail"
+            }
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -86,7 +122,7 @@ const structuredData = {
       },
       {
         "@type": "Offer",
-        "price": "Fiyat teklifi için iletişime geçin",
+        "price": "0.60",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -102,11 +138,47 @@ const structuredData = {
             "@type": "Brand",
             "name": "Viracup"
           },
+          "image": "https://viracuponline.com/cup-7oz.svg",
           "offers": {
             "@type": "Offer",
-            "price": "Fiyat teklifi için iletişime geçin",
+            "price": "0.60",
             "priceCurrency": "TRY",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "0.60",
+              "priceCurrency": "TRY",
+              "valueAddedTaxIncluded": true
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "TRY"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 5,
+                  "unitCode": "DAY"
+                }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 14,
+              "returnMethod": "https://schema.org/ReturnByMail"
+            }
           },
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -119,7 +191,7 @@ const structuredData = {
       },
       {
         "@type": "Offer",
-        "price": "Fiyat teklifi için iletişime geçin",
+        "price": "0.80",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -135,11 +207,47 @@ const structuredData = {
             "@type": "Brand",
             "name": "Viracup"
           },
+          "image": "https://viracuponline.com/cup-10oz.svg",
           "offers": {
             "@type": "Offer",
-            "price": "Fiyat teklifi için iletişime geçin",
+            "price": "0.80",
             "priceCurrency": "TRY",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "0.80",
+              "priceCurrency": "TRY",
+              "valueAddedTaxIncluded": true
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": "0",
+                "currency": "TRY"
+              },
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 3,
+                  "unitCode": "DAY"
+                },
+                "transitTime": {
+                  "@type": "QuantitativeValue",
+                  "minValue": 1,
+                  "maxValue": 5,
+                  "unitCode": "DAY"
+                }
+              }
+            },
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 14,
+              "returnMethod": "https://schema.org/ReturnByMail"
+            }
           },
           "aggregateRating": {
             "@type": "AggregateRating",
