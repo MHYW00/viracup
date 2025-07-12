@@ -56,6 +56,7 @@ const structuredData = {
         "price": "0.50",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
           "name": "Viracup"
@@ -75,6 +76,7 @@ const structuredData = {
             "price": "0.50",
             "priceCurrency": "TRY",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2025-12-31",
             "priceSpecification": {
               "@type": "PriceSpecification",
               "price": "0.50",
@@ -125,6 +127,7 @@ const structuredData = {
         "price": "0.60",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
           "name": "Viracup"
@@ -144,6 +147,7 @@ const structuredData = {
             "price": "0.60",
             "priceCurrency": "TRY",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2025-12-31",
             "priceSpecification": {
               "@type": "PriceSpecification",
               "price": "0.60",
@@ -194,6 +198,7 @@ const structuredData = {
         "price": "0.80",
         "priceCurrency": "TRY",
         "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
           "name": "Viracup"
@@ -213,6 +218,7 @@ const structuredData = {
             "price": "0.80",
             "priceCurrency": "TRY",
             "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2025-12-31",
             "priceSpecification": {
               "@type": "PriceSpecification",
               "price": "0.80",
