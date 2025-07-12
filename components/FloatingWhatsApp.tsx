@@ -10,15 +10,15 @@ export default function FloatingWhatsApp() {
   const handleWhatsAppClick = () => {
     const message = 'Merhaba, Viracup karton bardaklar hakkında bilgi almak istiyorum.';
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/905551234567?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/905321319594?text=${encodedMessage}`, '_blank');
   };
 
   const handlePhoneClick = () => {
-    window.open('tel:+905551234567', '_self');
+    window.open('tel:+905321319594', '_self');
   };
 
   const handleEmailClick = () => {
-    window.open('mailto:info@viracup.com', '_self');
+    window.open('mailto:birinci854@gmail.com', '_self');
   };
 
   return (
