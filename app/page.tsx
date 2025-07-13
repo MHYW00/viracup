@@ -1,30 +1,25 @@
 import dynamic from 'next/dynamic'
 import Hero from '@/sections/Hero'
 
-// Aggressive lazy loading for better performance
+// Optimized lazy loading with SSR support
 const ProductShowcase = dynamic(() => import('@/sections/ProductShowcase'), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>,
-  ssr: false // Client-side only for better performance
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
 })
 
 const WhyViracup = dynamic(() => import('@/sections/WhyViracup'), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>,
-  ssr: false
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
 })
 
 const About = dynamic(() => import('@/sections/About'), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>,
-  ssr: false
+  loading: () => <div className="h-96 animate-pulse bg-gray-100"></div>
 })
 
 const ContactForm = dynamic(() => import('@/sections/ContactForm'), {
-  loading: () => <div className="h-64 animate-pulse bg-gray-100"></div>,
-  ssr: false
+  loading: () => <div className="h-64 animate-pulse bg-gray-100"></div>
 })
 
 const Footer = dynamic(() => import('@/sections/Footer'), {
-  loading: () => <div className="h-32 animate-pulse bg-gray-100"></div>,
-  ssr: false
+  loading: () => <div className="h-32 animate-pulse bg-gray-100"></div>
 })
 
 const FloatingWhatsApp = dynamic(() => import('@/components/FloatingWhatsApp'), {

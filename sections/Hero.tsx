@@ -1,10 +1,11 @@
-'use client';
+'use client'
 
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { MessageCircle, Phone, Star, Sparkles } from 'lucide-react';
+import React from 'react'
+import { motion } from 'framer-motion'
+import { Button } from '@/components/ui/button'
+import { MessageCircle, Phone, Star, Sparkles } from 'lucide-react'
 
-export default function Hero() {
+const Hero: React.FC = () => {
   const handleWhatsAppContact = () => {
     const message = 'Merhaba, Viracup hakkında bilgi almak istiyorum.';
     const encodedMessage = encodeURIComponent(message);
@@ -435,4 +436,6 @@ export default function Hero() {
       </div>
     </section>
   );
-} 
+}
+
+export default Hero 

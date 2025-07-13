@@ -8,11 +8,9 @@ const nextConfig = {
   // Compression
   compress: true,
   
-  // Experimental features for performance
+  // Experimental features for performance - safer options
   experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
-    optimizeCss: true,
-    webVitalsAttribution: ['CLS', 'LCP'],
+    optimizePackageImports: ['framer-motion', 'lucide-react']
   },
   
   compiler: {
@@ -36,10 +34,6 @@ const nextConfig = {
           {
             key: 'X-DNS-Prefetch-Control',
             value: 'on'
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains'
           },
           {
             key: 'X-Frame-Options',
