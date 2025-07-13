@@ -67,7 +67,19 @@ const Hero: React.FC = () => {
               className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-green-800 mb-4 sm:mb-6 font-manrope leading-tight"
             >
               Karton Bardak{' '}
-              <span className="text-gradient">Üreticisi</span>
+              <span 
+                className="text-gradient" 
+                style={{
+                  background: 'linear-gradient(135deg, #15803d 0%, #16a34a 30%, #eab308 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  color: '#15803d',
+                  fontWeight: '800'
+                }}
+              >
+                Üreticisi
+              </span>
             </motion.h1>
             
             <motion.p

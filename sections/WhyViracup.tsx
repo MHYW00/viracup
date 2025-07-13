@@ -96,7 +96,19 @@ export default function WhyViracup() {
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-green-800 mb-4 sm:mb-6 font-manrope">
             Neden{' '}
-            <span className="text-gradient">Viracup?</span>
+            <span 
+              className="text-gradient"
+              style={{
+                background: 'linear-gradient(135deg, #15803d 0%, #16a34a 30%, #eab308 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                color: '#15803d',
+                fontWeight: '800'
+              }}
+            >
+              Viracup?
+            </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-700 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4 md:px-0">
             Sürdürülebilirlik ve kalite bir arada. Çevreye duyarlı üretim süreçlerimizle 
@@ -152,7 +164,19 @@ export default function WhyViracup() {
           >
             <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-green-800 mb-6 sm:mb-8 font-manrope">
               Viracup ile{' '}
-              <span className="text-gradient">Avantajlarınız</span>
+              <span 
+                className="text-gradient"
+                style={{
+                  background: 'linear-gradient(135deg, #15803d 0%, #16a34a 30%, #eab308 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  color: '#15803d',
+                  fontWeight: '800'
+                }}
+              >
+                Avantajlarınız
+              </span>
             </h3>
             
             <div className="space-y-3 sm:space-y-4">

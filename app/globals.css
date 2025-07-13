@@ -43,10 +43,34 @@ body {
 
 /* Gradients - Optimized */
 .text-gradient {
-  background: linear-gradient(135deg, #166534 0%, #65a30d 50%, #eab308 100%);
+  /* Strong fallback color for better visibility */
+  color: #15803d;
+  font-weight: 700;
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 30%, #eab308 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Ensure gradient works on supported browsers */
+@supports (-webkit-background-clip: text) {
+  .text-gradient {
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Alternative gradient class for better visibility */
+.text-gradient-alt {
+  color: #16a34a;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(22, 101, 52, 0.3);
+}
+
+/* Desktop gradient support check */
+@supports (-webkit-background-clip: text) {
+  .text-gradient {
+    color: transparent;
+  }
 }
 
 .bg-gradient-eco {
@@ -317,15 +341,6 @@ body {
   .shimmer,
   .pulse-glow {
     animation: none;
-  }
-  
-  /* Simplify gradients on mobile */
-  .text-gradient {
-    background: #166534;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    background-clip: unset;
-    color: #166534;
   }
 }
 

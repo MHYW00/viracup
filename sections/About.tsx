@@ -77,7 +77,19 @@ export default function About() {
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-green-800 mb-4 sm:mb-6 font-manrope">
             Viracup{' '}
-            <span className="text-gradient">Hikayemiz</span>
+            <span 
+              className="text-gradient"
+              style={{
+                background: 'linear-gradient(135deg, #15803d 0%, #16a34a 30%, #eab308 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                color: '#15803d',
+                fontWeight: '800'
+              }}
+            >
+              Hikayemiz
+            </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-700 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4 md:px-0">
             2019'dan bu yana çevre dostu ambalaj çözümlerinde öncü olan Viracup, 
