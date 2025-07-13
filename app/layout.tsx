@@ -63,9 +63,45 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth">
       <head>
+        {/* Performance Critical Resources */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        
+        {/* DNS Prefetch for External Resources */}
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        
+        {/* Preconnect for Critical Resources */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Preload Critical Font */}
+        <link 
+          rel="preload" 
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" 
+          as="style" 
+        />
+        <noscript>
+          <link 
+            rel="stylesheet" 
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" 
+          />
+        </noscript>
+        
+        {/* Viewport Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        
+        {/* Theme Color */}
+        <meta name="theme-color" content="#166534" />
+        
+        {/* Performance Hints */}
+        <meta httpEquiv="x-dns-prefetch-control" content="on" />
+        
+        {/* Preload Critical Images */}
+        <link rel="preload" as="image" href="/cup-7oz.svg" />
+        <link rel="preload" as="image" href="/cup-6oz.svg" />
+        <link rel="preload" as="image" href="/cup-10oz.svg" />
       </head>
       <body className="antialiased">
         {children}
